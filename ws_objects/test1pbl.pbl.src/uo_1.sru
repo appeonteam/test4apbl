@@ -11,6 +11,7 @@ global uo_1 uo_1
 type variables
 string is_aa 
 end variables
+
 on uo_1.create
 call super::create
 TriggerEvent( this, "constructor" )
