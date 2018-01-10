@@ -3,4 +3,5 @@
  "test3pbl.pbl" "";
 @end;
 @begin Objects 
+ "w_33.srw" "test3pbl.pbl";
 @end;
