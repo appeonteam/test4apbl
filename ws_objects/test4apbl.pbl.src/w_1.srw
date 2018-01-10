@@ -44,8 +44,8 @@ destroy(this.cb_1)
 end on
 
 type cb_3 from commandbutton within w_1
-integer x = 1339
-integer y = 440
+integer x = 1216
+integer y = 352
 integer width = 457
 integer height = 132
 integer taborder = 20
@@ -55,7 +55,7 @@ fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
 string facename = "Tahoma"
-string text = "none"
+string text = "test"
 end type
 
 type cb_2 from commandbutton within w_1
