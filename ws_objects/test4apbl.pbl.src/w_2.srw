@@ -2,6 +2,8 @@
 forward
 global type w_2 from window
 end type
+type sle_3 from singlelineedit within w_2
+end type
 type sle_2 from singlelineedit within w_2
 end type
 type sle_1 from singlelineedit within w_2
@@ -20,22 +22,43 @@ boolean resizable = true
 long backcolor = 67108864
 string icon = "AppIcon!"
 boolean center = true
+sle_3 sle_3
 sle_2 sle_2
 sle_1 sle_1
 end type
 global w_2 w_2
 
 on w_2.create
+this.sle_3=create sle_3
 this.sle_2=create sle_2
 this.sle_1=create sle_1
-this.Control[]={this.sle_2,&
+this.Control[]={this.sle_3,&
+this.sle_2,&
 this.sle_1}
 end on
 
 on w_2.destroy
+destroy(this.sle_3)
 destroy(this.sle_2)
 destroy(this.sle_1)
 end on
+
+type sle_3 from singlelineedit within w_2
+integer x = 1047
+integer y = 252
+integer width = 457
+integer height = 132
+integer taborder = 20
+integer textsize = -12
+integer weight = 400
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "Tahoma"
+long textcolor = 33554432
+string text = "none"
+borderstyle borderstyle = stylelowered!
+end type
 
 type sle_2 from singlelineedit within w_2
 integer x = 343
